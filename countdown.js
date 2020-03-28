@@ -1,6 +1,6 @@
 
 
-var comingdate = new Date("Feb 1, 2020 00:00:00");
+var comingdate = new Date("Feb 1, 2020 00:01:00");
 
 var d = document.getElementById('d');
 var h = document.getElementById('h');
@@ -11,7 +11,7 @@ var x = setInterval(function(){
   var now = new Date();
   var des = comingdate.getTime() - now.getTime();
   var days = Math.floor(des/(1000 * 60 * 60 * 24));
-  var hours = Math.floor(des%(1000 * 60 * 60 * 24) / (1000 * 60 *60));
+  var hours = Math.floor(des%(1000 * 60 * 60 * 24) / (1000 * 60 *60)+1);
   var mins = Math.floor(des%(1000 * 60 * 60) / (1000 * 60));
   var secs = Math.floor(des%(1000 * 60) / 1000);
 

@@ -16,7 +16,7 @@ body{
   position: relative;
 }
 .countdown-col{
-  background: url(bg.png) no-repeat center;
+  background: url(bg.jpg) no-repeat center;
   background-size: cover;
 }
 .time {
@@ -92,13 +92,18 @@ body{
   }
 }
 .card{
-  width: 350px;
+  width: 300px;
   background: #f1f1f1;
   overflow: hidden;
   font-family: "montserrat",sans-serif;
   box-shadow: 0 0 20px #00000070;
 }
-
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 .top-section{
   position: relative;
 }
